@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Alarm Clock </title>
+</head>
+
+<body>
+    <div id="project">
+        <section class="container">
+            <div id="clock"></div>
+
+            <form class="setAlarm">
+                <label class="alarm-heading">
+                    <h3>Set Alarm Time</h3>
+                </label><br>
+                <div class="set-alarm-field">
+                    <input type="number" name="a_hour" id="a_hour" placeholder="HH" max="12" min="01">
+                    <input type="number" name="a_min" id="a_min" placeholder="MM" max="59" min="00">
+                    <input type="number" name="a_sec" id="a_sec" placeholder="SS" max="59" min="00">
+                    <select id="ampm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <div class="controls">
+                    <button type="submit" class="set-alarm">
+                        <span class="button-text">Set Alarm</span>
+                        <span class="button-icon">
+                            <ion-icon name="alarm-outline"></ion-icon>
+                        </span>
+                    </button>
+                    <button type="reset" onclick="clearAlarm()" class="clear-alarm">
+                        <span class="button-text">Stop Alarm</span>
+                        <span class="button-icon">
+                            <ion-icon name="stop-circle-outline"></ion-icon>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <hr style="margin-top: 20px">
+    <section>
+        <div>
+            <h3 class="alarm-heading" style="margin-top: 20px;">Upcoming Alarms</h3>
+        </div>
+        <div>
+            <ul id="myList">
+
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
