@@ -1,7 +1,7 @@
 const display = document.getElementById('clock');
 
 // set audio for alarm
-const audio = new Audio('media/alarm3.wav');
+const audio = new Audio('media/alarm2.mp3');
 audio.loop = true;
 
 let alarmTime = null;
