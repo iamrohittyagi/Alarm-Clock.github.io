@@ -31,7 +31,7 @@ function updateTime() {
     const minutes = formatTime(today.getMinutes());
     const seconds = formatTime(today.getSeconds());
     const ampm = formatTime(today.getHours())< 12 ? 'AM': 'PM';
-     if(hour >12){
+    if(hour >12){
         hour = (12 - hour) * -1;
     }else if(hour == 00){
         hour = 12;
