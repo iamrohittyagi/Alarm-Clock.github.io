@@ -132,8 +132,7 @@ button {
     font-size: 1.5em;
 }
 
-
-
+/* lists */
 
 #myList {
     list-style-type: none;
@@ -144,7 +143,7 @@ button {
 
 
 
-/* lists */
+
 
 
 #myList li {

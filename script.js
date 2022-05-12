@@ -41,7 +41,6 @@ function updateTime() {
 
     hour = formatTime(hour);
    
-    
     const now = `${hour}:${minutes}:${seconds}${ampm}` ;
 
     display.innerText=`${hour}:${minutes}:${seconds}${ampm}`;
